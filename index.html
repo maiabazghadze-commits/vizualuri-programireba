@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>რა არის ვიზუალური პროგრამირება? | ინტერაქტიული თავგადასავალი</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ზედა ნავიგაცია და პროგრესის ზოლი -->
+  <header class="main-header">
+    <div class="header-container">
+      <div class="logo-area">
+        <span class="logo-icon">🧩</span>
+        <div>
+          <h1 class="logo-title">ვიზუალური პროგრამირება</h1>
+          <p class="logo-subtitle">IV–VI კლასის ციფრული თავგადასავალი</p>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="#intro" class="nav-btn active">🍳 მაგიური რეცეპტი</a>
+        <a href="#what-is" class="nav-btn">🧱 რა არის?</a>
+        <a href="#platforms" class="nav-btn">🎮 პლატფორმები</a>
+        <a href="#lab" class="nav-btn highlight">🚀 ლაბორატორია</a>
+        <a href="#safety" class="nav-btn">🛡️ ეთიკა & ჯანმრთელობა</a>
+        <a href="#quiz" class="nav-btn">🏆 ქვიზი</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="content-wrapper">
+
+    <!-- HERO ბანერი -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <span class="hero-badge">✨ კეთილი იყოს შენი მობრძანება ციფრულ სამყაროში!</span>
+        <h2 class="hero-title">როგორ ვასწავლოთ კომპიუტერს „აზროვნება“?</h2>
+        <p class="hero-desc">
+          იფიქრე კომპიუტერზე, როგორც ძალიან ჭკვიან, მაგრამ ცოტა ზარმაც რობოტზე — მას შეუძლია გააკეთოს ყველაფერი, ოღონდ მხოლოდ მაშინ, თუ <strong>ზუსტ და მკაფიო მითითებებს</strong> მივცემთ!
+        </p>
+        <div class="hero-actions">
+          <a href="#lab" class="btn btn-primary pulse">გამოსცადე კოდირება პრაქტიკაში 🎮</a>
+          <a href="#intro" class="btn btn-secondary">დაიწყე შესავლით 👇</a>
+        </div>
+      </div>
+      <div class="hero-illustration">
+        <div class="robot-avatar-container">
+          <div class="robot-head">
+            <div class="antenna"></div>
+            <div class="eyes">
+              <span class="eye left"></span>
+              <span class="eye right"></span>
+            </div>
+            <div class="mouth smile"></div>
+          </div>
+          <div class="speech-bubble">
+            გამარჯობა! მე მქვია <strong>რობი</strong> 🤖<br>მოდი, ერთად ავაწყოთ პირველი კოდი!
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1. შესავალი და ყოველდღიური მაგალითი -->
+    <section id="intro" class="section-card">
+      <div class="section-header">
+        <span class="step-num">ნაბიჯი 1</span>
+        <h2>🍳 მაგიური რეცეპტი და „რობოტი შეფი“</h2>
+        <p class="section-tagline">როგორ ვაძლევთ კომპიუტერს გასაგებ ინსტრუქციებს?</p>
+      </div>
+
+      <div class="grid-2-col">
+        <div class="text-content">
+          <p>
+            ოდესმე გამოგიცხვია ნამცხვარი ან მოგიმზადებია გემრიელი სენდვიჩი? თუ დედას რეცეპტს დააკვირდები, იქ წერია ზუსტი ნაბიჯები:
+          </p>
+          <ul class="fun-list">
+            <li>🍞 <strong>ნაბიჯი 1:</strong> აიღე პურის ნაჭერი.</li>
+            <li>🧈 <strong>ნაბიჯი 2:</strong> წაუსვი კარაქი.</li>
+            <li>🧀 <strong>ნაბიჯი 3:</strong> დაადე ყველი.</li>
+            <li>🥪 <strong>ნაბიჯი 4:</strong> ზემოდან დააფარე მეორე პურის ნაჭერი.</li>
+          </ul>
+
+          <div class="info-callout tip">
+            <span class="callout-icon">💡</span>
+            <div>
+              <strong>დაფიქრდი:</strong> რა მოხდება, თუ მე-2 ნაბიჯს გამოვტოვებთ ან ყველს პურის აღებამდე დავდებთ თეფშზე? სენდვიჩი გაფუჭდება! 
+              სწორედ ასე მუშაობს კომპიუტერიც — მას სჭირდება <strong>ბრძანებების სწორი თანმიმდევრობა</strong>.
+            </div>
+          </div>
+        </div>
+
+        <!-- ინტერაქტიული მინი-ექსპერიმენტი: შეფ რობის სენდვიჩი -->
+        <div class="interactive-box">
+          <h3 class="box-title">🧪 ექსპერიმენტი: დაალაგე სენდვიჩის რეცეპტი!</h3>
+          <p class="box-subtitle">დააწკაპუნე ნაბიჯებს სწორი თანმიმდევრობით და ნახე, რა გამოუვა რობის:</p>
+
+          <div class="recipe-game-container">
+            <div class="recipe-pool" id="recipePool">
+              <button class="recipe-step-btn" data-step="1">🍞 1. აიღე პური</button>
+              <button class="recipe-step-btn" data-step="3">🧀 3. დაადე ყველი</button>
+              <button class="recipe-step-btn" data-step="2">🧈 2. წაუსვი კარაქი</button>
+              <button class="recipe-step-btn" data-step="4">🥪 4. დააფარე პური</button>
+            </div>
+
+            <div class="recipe-workspace">
+              <h4>შენი არჩეული თანმიმდევრობა:</h4>
+              <div class="chosen-steps" id="chosenSteps">
+                <span class="placeholder-text">დააწკაპუნე ბარათებს ზემოთ...</span>
+              </div>
+            </div>
+
+            <div class="recipe-actions">
+              <button id="testRecipeBtn" class="btn btn-sm btn-primary">გაშვება 🚀</button>
+              <button id="resetRecipeBtn" class="btn btn-sm btn-ghost">თავიდან ↺</button>
+            </div>
+            <div id="recipeFeedback" class="recipe-feedback hidden"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. რა არის ვიზუალური პროგრამირება? -->
+    <section id="what-is" class="section-card">
+      <div class="section-header">
+        <span class="step-num">ნაბიჯი 2</span>
+        <h2>🧱 რა არის ვიზუალური პროგრამირება?</h2>
+        <p class="section-tagline">პროგრამირება ლეგოს კუბიკებივით — შეცდომების შიშის გარეშე!</p>
+      </div>
+
+      <div class="comparison-container">
+        <div class="compare-card text-code">
+          <div class="compare-badge red">ტექსტური კოდი (რთული) ✍️</div>
+          <p class="compare-desc">ადრე პროგრამისტები წერდნენ უამრავ უცნაურ სიმბოლოს. ერთი წერტილ-მძიმეც (;) რომ გამოგრჩენოდა, მთელი პროგრამა ჩერდებოდა:</p>
+          <pre class="code-snippet"><code>function moveRobot() {
+  if (pathClear == true) {
+    robot.stepForward(); // ვაიმე, მძიმე დამავიწყდა?!
+  }
+}</code></pre>
+          <div class="compare-verdict bad">❌ ადვილად გეპარება ბეჭდური შეცდომა</div>
+        </div>
+
+        <div class="vs-divider">VS</div>
+
+        <div class="compare-card visual-code">
+          <div class="compare-badge green">ვიზუალური ბლოკები (მარტივი & სახალისო) 🧩</div>
+          <p class="compare-desc">ვიზუალურ პროგრამირებაში ბრძანებები ჰგავს <strong>ფერად თავსატეხებს (პაზლებს)</strong>. ისინი ერთმანეთს ეწებება მხოლოდ მაშინ, თუ ლოგიკა სწორია:</p>
+          <div class="mock-blocks">
+            <div class="mock-block block-event">როდესაც 🟢 დაწკაპუნებულია</div>
+            <div class="mock-block block-loop">
+              გაიმეორე 4-ჯერ
+              <div class="mock-nested">
+                <div class="mock-block block-motion">ნაბიჯი წინ (10)</div>
+                <div class="mock-block block-motion">მობრუნდი 90°</div>
+              </div>
+            </div>
+          </div>
+          <div class="compare-verdict good">✅ სინტაქსური შეცდომა შეუძლებელია! ფოკუსირდები მხოლოდ ლოგიკაზე!</div>
+        </div>
+      </div>
+
+      <!-- 5 მთავარი ცნება ბარათებში -->
+      <h3 class="subsection-title">🔑 5 მთავარი ცნება, რომელიც ნამდვილ დეველოპერად გაქცევს:</h3>
+      <div class="concept-cards-grid">
+        
+        <div class="concept-card">
+          <div class="concept-icon">👉</div>
+          <h4>1. ბრძანება (Command)</h4>
+          <p>კონკრეტული მითითება, რომელსაც კომპიუტერი უსიტყვოდ ასრულებს (მაგ., „გადადგი 1 ნაბიჯი“, „დაუკარი ხმა“).</p>
+        </div>
+
+        <div class="concept-card">
+          <div class="concept-icon">🔢</div>
+          <h4>2. თანმიმდევრობა (Sequence)</h4>
+          <p>ბრძანებების რიგითობა თავიდან ბოლომდე. თუ რიგი აგვერევა, შედეგიც სრულიად განსხვავებული იქნება!</p>
+        </div>
+
+        <div class="concept-card">
+          <div class="concept-icon">🔁</div>
+          <h4>3. გამეორება / ციკლი (Loop)</h4>
+          <p>იმის ნაცვლად, რომ 10-ჯერ დაწერო „გადადგი ნაბიჯი“, ვიყენებთ ბლოკს „გაიმეორე 10-ჯერ“. დროც იზოგება და კოდიც სუფთაა!</p>
+        </div>
+
+        <div class="concept-card">
+          <div class="concept-icon">🤔</div>
+          <h4>4. პირობა (Condition)</h4>
+          <p>„<strong>თუ</strong> წინ კედელია, <strong>მაშინ</strong> მობრუნდი; <strong>სხვა შემთხვევაში</strong> იარე წინ“. კომპიუტერი იღებს გადაწყვეტილებას!</p>
+        </div>
+
+        <div class="concept-card highlight-bug">
+          <div class="concept-icon">🐞</div>
+          <h4>5. შეცდომა / ბაგი (Bug)</h4>
+          <p>
+            <strong>შეცდომა მტერი არ არის!</strong> პროგრამირებაში ბაგი ნიშნავს, რომ რაღაც ისე არ მუშაობს, როგორც გვინდოდა. მისი პოვნა დეტექტივობაცაა და საუკეთესო ცოდნაც!
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. სად გვხვდება ვიზუალური პროგრამირება? -->
+    <section id="platforms" class="section-card">
+      <div class="section-header">
+        <span class="step-num">ნაბიჯი 3</span>
+        <h2>🎮 სად ვნახავთ ამ მაგიას?</h2>
+        <p class="section-tagline">სამი ყველაზე პოპულარული და საყვარელი პლატფორმა მთელ მსოფლიოში</p>
+      </div>
+
+      <div class="platforms-grid">
+        <!-- Scratch Card -->
+        <div class="platform-card scratch-card">
+          <div class="platform-header">
+            <span class="platform-logo">🐱</span>
+            <div>
+              <h3>Scratch</h3>
+              <span class="platform-sub">შექმნილია MIT-ის მიერ</span>
+            </div>
+          </div>
+          <p class="platform-text">
+            აქ შეგიძლია შექმნა საკუთარი მულტფილმები, მუსიკალური კლიპები და თამაშები!
+          </p>
+          <div class="platform-features">
+            <span class="tag">🎭 <strong>სპრაიტები:</strong> შენი პერსონაჟები (კატა, დინოზავრი, ბურთი).</span>
+            <span class="tag">👗 <strong>კოსტიუმები:</strong> პერსონაჟის ანიმაცია და ფერები.</span>
+            <span class="tag">🌄 <strong>ფონები:</strong> სცენა, სადაც ამბავი ვითარდება.</span>
+          </div>
+          <div class="platform-tip">„შეაერთე ბლოკები და გააცოცხლე შენი ფანტაზია!“</div>
+        </div>
+
+        <!-- Code.org Card -->
+        <div class="platform-card codeorg-card">
+          <div class="platform-header">
+            <span class="platform-logo">🧩</span>
+            <div>
+              <h3>Code.org</h3>
+              <span class="platform-sub">კოდის საათი (Hour of Code)</span>
+            </div>
+          </div>
+          <p class="platform-text">
+            ლაბირინთებისა და თავსატეხების ნამდვილი სამეფო. აქ ნაბიჯ-ნაბიჯ ეხმარები Angry Birds-ს, Elsa-ს ან Minecraft-ის გმირებს მიზნის მიღწევაში.
+          </p>
+          <div class="platform-features">
+            <span class="tag">🎯 <strong>ლაბირინთები:</strong> ლოგიკური ამოცანების ამოხსნა.</span>
+            <span class="tag">🧩 <strong>Snap-in ბლოკები:</strong> ბლოკების მყისიერი ჩაწკაპუნება.</span>
+            <span class="tag">⭐ <strong>დონეები:</strong> მარტივიდან რთულისკენ სვლა.</span>
+          </div>
+          <div class="platform-tip">„იდეალური ადგილი ალგორითმული აზროვნების დასაწყებად!“</div>
+        </div>
+
+        <!-- Minecraft Education Card -->
+        <div class="platform-card minecraft-card">
+          <div class="platform-header">
+            <span class="platform-logo">⛏️</span>
+            <div>
+              <h3>Minecraft: Education</h3>
+              <span class="platform-sub">კოდირება 3D სამყაროში</span>
+            </div>
+          </div>
+          <p class="platform-text">
+            შენი საყვარელი ბლოკების სამყარო, ოღონდ პროგრამირებით! შენ მართავ პატარა რობოტს — <strong>აგენტს (Agent)</strong>, რომელიც წამებში აშენებს უზარმაზარ სასახლეებს.
+          </p>
+          <div class="platform-features">
+            <span class="tag">🤖 <strong>აგენტი (Agent):</strong> შენი ციფრული დამხმარე რობოტი.</span>
+            <span class="tag">🏰 <strong>ავტომატური მშენებლობა:</strong> ციკლებით აგებული კოშკები.</span>
+            <span class="tag">👥 <strong>გუნდური მუშაობა:</strong> მეგობრებთან ერთად შექმნა.</span>
+          </div>
+          <div class="platform-tip">„დააპროგრამე აგენტი და უყურე, როგორ შენდება ქალაქი!“</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. ინტერაქტიული ლაბორატორია / სიმულატორი -->
+    <section id="lab" class="section-card lab-section">
+      <div class="section-header">
+        <span class="step-num">ნაბიჯი 4</span>
+        <h2>🚀 ინტერაქტიული ლაბორატორია: „დაეხმარე რობოტ რობის!“</h2>
+        <p class="section-tagline">ააწყვე ბლოკები, გაუშვი კოდი და მიიყვანე რობი ვარსკვლავამდე ⭐</p>
+      </div>
+
+      <!-- დონის არჩევა (სკაფოლდინგი & დიფერენციაცია) -->
+      <div class="level-selector-bar">
+        <span class="level-label">აირჩიე გამოწვევა:</span>
+        <button class="level-tab active" data-level="1">
+          🟢 დონე 1: პირველი ნაბიჯები (საბაზისო)
+        </button>
+        <button class="level-tab" data-level="2">
+          🟡 დონე 2: ლაბირინთში მოსახვევები (საშუალო)
+        </button>
+        <button class="level-tab star-level" data-level="3">
+          ⭐ დონე 3: დიდი გამოწვევა ციკლით! (ვარსკვლავიანი)
+        </button>
+      </div>
+
+      <!-- დონის აღწერა -->
+      <div class="level-mission-banner" id="levelMissionBanner">
+        <span class="mission-icon">🎯</span>
+        <div id="missionText">
+          <strong>მისია 1:</strong> რობი პირდაპირ იყურება. დაუმატე <strong>„ნაბიჯი წინ“</strong> ბლოკები და მიიყვანე ვარსკვლავამდე!
+        </div>
+      </div>
+
+      <!-- ლაბორატორიის მთავარი სამუშაო არე (3 სვეტი) -->
+      <div class="lab-workspace-grid">
+        
+        <!-- ხელსაწყოების ყუთი (Toolbox) -->
+        <div class="toolbox-panel">
+          <h3 class="panel-title">🧩 ბლოკების ყუთი</h3>
+          <p class="panel-hint">დააწკაპუნე ბლოკს, რომ დაამატო შენს პროგრამაში:</p>
+          
+          <div class="blocks-palette">
+            <button class="code-block block-forward" data-action="forward">
+              <span class="b-icon">⬆️</span> ნაბიჯი წინ
+            </button>
+            <button class="code-block block-turn-left" data-action="turnLeft">
+              <span class="b-icon">↰</span> მობრუნდი მარცხნივ
+            </button>
+            <button class="code-block block-turn-right" data-action="turnRight">
+              <span class="b-icon">↱</span> მობრუნდი მარჯვნივ
+            </button>
+            <button class="code-block block-loop-btn" data-action="loop3">
+              <span class="b-icon">🔁</span> გაიმეორე 3-ჯერ (წინ)
+            </button>
+          </div>
+
+          <div class="toolbox-help">
+            💡 <strong>რჩევა:</strong> შეგიძლია ბლოკები ნებისმიერ დროს წაშალო ან შეცვალო!
+          </div>
+        </div>
+
+        <!-- სამუშაო მაგიდა (Program sequence) -->
+        <div class="program-panel">
+          <div class="program-panel-header">
+            <h3 class="panel-title">📜 შენი პროგრამა</h3>
+            <button id="clearProgramBtn" class="btn btn-xs btn-ghost">გასუფთავება 🗑️</button>
+          </div>
+          
+          <div class="program-start-block">
+            🟢 როდესაც ვაჭერთ <strong>„გაშვებას“</strong>:
+          </div>
+
+          <!-- აქ ემატება ბლოკები -->
+          <div class="program-dropzone" id="programDropzone">
+            <div class="empty-dropzone-hint" id="emptyHint">
+              დაამატე ბლოკები მარცხენა ყუთიდან...
+            </div>
+          </div>
+
+          <!-- მართვის ღილაკები -->
+          <div class="program-controls">
+            <button id="runCodeBtn" class="btn btn-primary btn-run">
+              ▶ გაშვება
+            </button>
+            <button id="stepCodeBtn" class="btn btn-secondary btn-step">
+              👣 ნაბიჯ-ნაბიჯ (დეტექტივი)
+            </button>
+            <button id="resetSimBtn" class="btn btn-ghost btn-reset">
+              ↺ თავიდან
+            </button>
+          </div>
+        </div>
+
+        <!-- სიმულატორის არე (Robot Grid) -->
+        <div class="simulator-panel">
+          <div class="sim-header">
+            <h3 class="panel-title">🤖 რობის სამყარო</h3>
+            <span class="sim-status-badge" id="simStatusBadge">მზადაა</span>
+          </div>
+
+          <div class="grid-arena-wrapper">
+            <div class="grid-arena" id="gridArena">
+              <!-- ბადის უჯრები დინამიურად შეიქმნება JS-ით -->
+            </div>
+          </div>
+
+          <!-- შეტყობინებების ეკრანი -->
+          <div class="sim-feedback-card hidden" id="simFeedbackCard">
+            <div class="sim-feedback-content" id="simFeedbackContent"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. ეთიკა, უსაფრთხოება და ციფრული კეთილდღეობა -->
+    <section id="safety" class="section-card safety-section">
+      <div class="section-header">
+        <span class="step-num">ნაბიჯი 5</span>
+        <h2>🛡️ ციფრული ეთიკა, უსაფრთხოება და ჯანმრთელობა</h2>
+        <p class="section-tagline">ნამდვილი პროგრამისტი არა მხოლოდ კოდს წერს, არამედ იცავს წესებსაც!</p>
+      </div>
+
+      <div class="safety-grid">
+        <!-- უსაფრთხოების ფარი -->
+        <div class="safety-card shield">
+          <div class="safety-icon">🔒</div>
+          <h3>პერსონალური მონაცემების ფარი</h3>
+          <p>
+            როდესაც Scratch-ზე ან სხვა საიტზე პროექტს აზიარებ, <strong>არასოდეს ჩაწერო:</strong>
+          </p>
+          <ul class="safety-rules-list">
+            <li>❌ შენი სრული სახელი და გვარი</li>
+            <li>❌ სახლის მისამართი ან სკოლის ნომერი</li>
+            <li>❌ ტელეფონის ნომერი ან პირადი ფოტო</li>
+          </ul>
+          <div class="safety-good-tip">✅ გამოიყენე მხიარული ზედმეტსახელი (მაგ: <em>CyberHero_2026</em>)!</div>
+        </div>
+
+        <!-- ციფრული ეთიკა და რემიქსი -->
+        <div class="safety-card ethics">
+          <div class="safety-icon">🤝</div>
+          <h3>ციფრული ეთიკა და რემიქსი (Remix)</h3>
+          <p>
+            პროგრამისტებს ძალიან უყვართ ერთმანეთისთვის იდეების გაზიარება. თუ სხვისი პროექტი მოგეწონა და შენებურად გადააკეთე:
+          </p>
+          <ul class="safety-rules-list">
+            <li>⭐ ყოველთვის მიუთითე ორიგინალი ავტორის სახელი</li>
+            <li>💬 იყავი თავაზიანი კომენტარებში და გაამხნევე სხვები</li>
+            <li>🚫 არასოდეს მოიპარო სხვისი შრომა საკუთარ სახელად</li>
+          </ul>
+        </div>
+
+        <!-- ჯანმრთელობა და თვალების დასვენება -->
+        <div class="safety-card wellbeing">
+          <div class="safety-icon">👁️</div>
+          <h3>თვალების დასვენება: 20-20-20 წესი</h3>
+          <p>
+            კომპიუტერთან მუშაობა ძალიან საინტერესოა, მაგრამ ჩვენს თვალებსა და ხერხემალს დასვენება სჭირდება!
+          </p>
+          <div class="rule-box-20">
+            <strong>⏱️ ყოველ 20 წუთში:</strong> გაიხედე ეკრანიდან შორს (დაახლოებით 20 მეტრში) 20 წამის განმავლობაში, დაახამხამე თვალები და გაიზმორე!
+          </div>
+
+          <!-- ინტერაქტიული თვალის სავარჯიშო ღილაკი -->
+          <div class="eye-exercise-box">
+            <button id="startEyeRestBtn" class="btn btn-sm btn-accent">
+              👀 გავაკეთოთ 20-წამიანი თვალის ვარჯიში!
+            </button>
+            <div id="eyeTimerDisplay" class="eye-timer hidden">
+              <span class="timer-number" id="eyeTimerSec">20</span> წამი
+              <div class="eye-guide-animation">
+                <span class="moving-dot">🟢</span>
+                <p id="eyeGuideText">უყურე მწვანე წერტილს და დაახამხამე თვალები...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. თვითშეფასების ინტერაქტიული ქვიზი -->
+    <section id="quiz" class="section-card quiz-section">
+      <div class="section-header">
+        <span class="step-num">ნაბიჯი 6</span>
+        <h2>🏆 გამოსცადე შენი თავი (მხიარული ქვიზი)</h2>
+        <p class="section-tagline">შეამოწმე, რამდენად კარგად გაიცანი ვიზუალური პროგრამირების სამყარო!</p>
+      </div>
+
+      <div class="quiz-container" id="quizContainer">
+        <!-- ქვიზის კითხვები დინამიურად იტვირთება JS-ით -->
+      </div>
+
+      <div class="quiz-results hidden" id="quizResults">
+        <div class="results-badge">🎉</div>
+        <h3 id="quizResultTitle">ყოჩაღ, შენ ნამდვილი კოდერი ხარ!</h3>
+        <p id="quizResultText"></p>
+        <button id="restartQuizBtn" class="btn btn-primary">თავიდან ცდა ↺</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ქვედა კოლონტიტული (Footer) -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-info">
+        <h3>🧩 ვიზუალური პროგრამირება IV–VI კლასისთვის</h3>
+        <p>შექმნილია თანამედროვე პედაგოგიური სტანდარტების, ბავშვთა უფლებებისა და ციფრული უსაფრთხოების სრული დაცვით.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#intro">დასაწყისი</a>
+        <a href="#lab">ლაბორატორია</a>
+        <a href="#safety">უსაფრთხოება</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 სასწავლო რესურსი დაწყებითი და საბაზო საფეხურის მოსწავლეებისთვის | შეცდომა განვითარების საუკეთესო ნაბიჯია! 🚀</p>
+    </div>
+  </footer>
+
+  <!-- კონფეტის ტილო წარმატების ანიმაციისთვის -->
+  <canvas id="confettiCanvas" class="confetti-canvas"></canvas>
+
+  <script src="app.js"></script>
+</body>
+</html>
